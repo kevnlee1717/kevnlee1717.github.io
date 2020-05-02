@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>编译器 | 读书笔记</title>
+    <meta name="description" content="blog for important">
+    <meta name="generator" content="VuePress 1.3.1">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.6b1fcd0f.css" as="style"><link rel="preload" href="/assets/js/app.9eeb4c04.js" as="script"><link rel="preload" href="/assets/js/2.05f5c699.js" as="script"><link rel="preload" href="/assets/js/80.5c82a395.js" as="script"><link rel="prefetch" href="/assets/js/10.ce5629fc.js"><link rel="prefetch" href="/assets/js/11.9773dffd.js"><link rel="prefetch" href="/assets/js/12.cb235449.js"><link rel="prefetch" href="/assets/js/13.838af8c1.js"><link rel="prefetch" href="/assets/js/14.0f78d55e.js"><link rel="prefetch" href="/assets/js/15.7b28f3cf.js"><link rel="prefetch" href="/assets/js/16.bd9e6d20.js"><link rel="prefetch" href="/assets/js/17.d8687edf.js"><link rel="prefetch" href="/assets/js/18.306806ea.js"><link rel="prefetch" href="/assets/js/19.ab35d666.js"><link rel="prefetch" href="/assets/js/20.d0795bc0.js"><link rel="prefetch" href="/assets/js/21.4528c5b9.js"><link rel="prefetch" href="/assets/js/22.d2153363.js"><link rel="prefetch" href="/assets/js/23.d7c71f27.js"><link rel="prefetch" href="/assets/js/24.a9e1c254.js"><link rel="prefetch" href="/assets/js/25.15696c77.js"><link rel="prefetch" href="/assets/js/26.4bbfc20d.js"><link rel="prefetch" href="/assets/js/27.1a8b8d41.js"><link rel="prefetch" href="/assets/js/28.81f62634.js"><link rel="prefetch" href="/assets/js/29.15767945.js"><link rel="prefetch" href="/assets/js/3.512ca8e1.js"><link rel="prefetch" href="/assets/js/30.e956e5bf.js"><link rel="prefetch" href="/assets/js/31.c9fa876d.js"><link rel="prefetch" href="/assets/js/32.79554d08.js"><link rel="prefetch" href="/assets/js/33.a6cfbf61.js"><link rel="prefetch" href="/assets/js/34.b6f8901e.js"><link rel="prefetch" href="/assets/js/35.ab673e8f.js"><link rel="prefetch" href="/assets/js/36.f5ee7dc3.js"><link rel="prefetch" href="/assets/js/37.40e0320b.js"><link rel="prefetch" href="/assets/js/38.6cb6a27b.js"><link rel="prefetch" href="/assets/js/39.ff4a30ed.js"><link rel="prefetch" href="/assets/js/4.00b5f0c7.js"><link rel="prefetch" href="/assets/js/40.478ea2a9.js"><link rel="prefetch" href="/assets/js/41.64fdc8de.js"><link rel="prefetch" href="/assets/js/42.514e254b.js"><link rel="prefetch" href="/assets/js/43.e2c263a3.js"><link rel="prefetch" href="/assets/js/44.e01d7fb4.js"><link rel="prefetch" href="/assets/js/45.a2fddd2d.js"><link rel="prefetch" href="/assets/js/46.8282db21.js"><link rel="prefetch" href="/assets/js/47.a7e1170f.js"><link rel="prefetch" href="/assets/js/48.fe61ca73.js"><link rel="prefetch" href="/assets/js/49.34cbcda0.js"><link rel="prefetch" href="/assets/js/5.59abda55.js"><link rel="prefetch" href="/assets/js/50.38e400ea.js"><link rel="prefetch" href="/assets/js/51.03cc45e4.js"><link rel="prefetch" href="/assets/js/52.f133d9c7.js"><link rel="prefetch" href="/assets/js/53.ada00766.js"><link rel="prefetch" href="/assets/js/54.24a05a9c.js"><link rel="prefetch" href="/assets/js/55.204b6e5c.js"><link rel="prefetch" href="/assets/js/56.13a2207f.js"><link rel="prefetch" href="/assets/js/57.a252ceca.js"><link rel="prefetch" href="/assets/js/58.315067a8.js"><link rel="prefetch" href="/assets/js/59.0026ba95.js"><link rel="prefetch" href="/assets/js/6.fccdfb42.js"><link rel="prefetch" href="/assets/js/60.30c08c7c.js"><link rel="prefetch" href="/assets/js/61.87d9ca75.js"><link rel="prefetch" href="/assets/js/62.30b4fffc.js"><link rel="prefetch" href="/assets/js/63.44cd0bb8.js"><link rel="prefetch" href="/assets/js/64.29caf405.js"><link rel="prefetch" href="/assets/js/65.5280d5cd.js"><link rel="prefetch" href="/assets/js/66.c1aa3043.js"><link rel="prefetch" href="/assets/js/67.7baea68b.js"><link rel="prefetch" href="/assets/js/68.d202f339.js"><link rel="prefetch" href="/assets/js/69.9b34bf67.js"><link rel="prefetch" href="/assets/js/7.1753504c.js"><link rel="prefetch" href="/assets/js/70.0569eace.js"><link rel="prefetch" href="/assets/js/71.464aeeb3.js"><link rel="prefetch" href="/assets/js/72.b7ec61d5.js"><link rel="prefetch" href="/assets/js/73.afd82e65.js"><link rel="prefetch" href="/assets/js/74.6bf26649.js"><link rel="prefetch" href="/assets/js/75.97d4b5c5.js"><link rel="prefetch" href="/assets/js/76.ae4be9dc.js"><link rel="prefetch" href="/assets/js/77.0236f6e7.js"><link rel="prefetch" href="/assets/js/78.de45f505.js"><link rel="prefetch" href="/assets/js/79.74474488.js"><link rel="prefetch" href="/assets/js/8.7d851339.js"><link rel="prefetch" href="/assets/js/81.310b0fe4.js"><link rel="prefetch" href="/assets/js/82.11228b74.js"><link rel="prefetch" href="/assets/js/83.2c92d02f.js"><link rel="prefetch" href="/assets/js/84.b1209e24.js"><link rel="prefetch" href="/assets/js/9.e24e4f73.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6b1fcd0f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">读书笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/uni-app/" class="nav-link">
+  uni
+</a></div><div class="nav-item"><a href="/es6/" class="nav-link">
+  es6
+</a></div><div class="nav-item"><a href="/python/" class="nav-link">
+  py
+</a></div><div class="nav-item"><a href="/tp5/" class="nav-link">
+  tp5
+</a></div><div class="nav-item"><a href="/docker/" class="nav-link">
+  dock
+</a></div><div class="nav-item"><a href="/face/" class="nav-link">
+  face
+</a></div><div class="nav-item"><a href="/android/" class="nav-link">
+  android
+</a></div><div class="nav-item"><a href="/csharp/" class="nav-link">
+  csharp
+</a></div><div class="nav-item"><a href="/c++/" class="nav-link">
+  c++
+</a></div><div class="nav-item"><a href="/arm/" class="nav-link">
+  arm
+</a></div><div class="nav-item"><a href="/wechat/" class="nav-link">
+  wechat
+</a></div><div class="nav-item"><a href="/汇编/" class="nav-link">
+  汇编
+</a></div><div class="nav-item"><a href="/unix/" class="nav-link">
+  unix
+</a></div><div class="nav-item"><a href="/资源/" class="nav-link">
+  资源
+</a></div><div class="nav-item"><a href="/摄影/" class="nav-link">
+  摄影
+</a></div><div class="nav-item"><a href="/加密币/" class="nav-link">
+  加密币
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/uni-app/" class="nav-link">
+  uni
+</a></div><div class="nav-item"><a href="/es6/" class="nav-link">
+  es6
+</a></div><div class="nav-item"><a href="/python/" class="nav-link">
+  py
+</a></div><div class="nav-item"><a href="/tp5/" class="nav-link">
+  tp5
+</a></div><div class="nav-item"><a href="/docker/" class="nav-link">
+  dock
+</a></div><div class="nav-item"><a href="/face/" class="nav-link">
+  face
+</a></div><div class="nav-item"><a href="/android/" class="nav-link">
+  android
+</a></div><div class="nav-item"><a href="/csharp/" class="nav-link">
+  csharp
+</a></div><div class="nav-item"><a href="/c++/" class="nav-link">
+  c++
+</a></div><div class="nav-item"><a href="/arm/" class="nav-link">
+  arm
+</a></div><div class="nav-item"><a href="/wechat/" class="nav-link">
+  wechat
+</a></div><div class="nav-item"><a href="/汇编/" class="nav-link">
+  汇编
+</a></div><div class="nav-item"><a href="/unix/" class="nav-link">
+  unix
+</a></div><div class="nav-item"><a href="/资源/" class="nav-link">
+  资源
+</a></div><div class="nav-item"><a href="/摄影/" class="nav-link">
+  摄影
+</a></div><div class="nav-item"><a href="/加密币/" class="nav-link">
+  加密币
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/%E6%B1%87%E7%BC%96/" class="sidebar-link">汇编</a></li><li><a href="/汇编/代码.html" class="sidebar-link">代码</a></li><li><a href="/汇编/寄存器.html" class="sidebar-link">寄存器</a></li><li><a href="/汇编/编译器.html" class="active sidebar-link">编译器</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/汇编/编译器.html#编译器优化" class="sidebar-link">编译器优化</a></li><li class="sidebar-sub-header"><a href="/汇编/编译器.html#cdel-stdcall-fastcall-约定" class="sidebar-link">cdel stdcall fastcall 约定</a></li><li class="sidebar-sub-header"><a href="/汇编/编译器.html#vc使用的寄存器约定" class="sidebar-link">vc使用的寄存器约定</a></li><li class="sidebar-sub-header"><a href="/汇编/编译器.html#vc会对数组多申请一些字节" class="sidebar-link">vc会对数组多申请一些字节</a></li><li class="sidebar-sub-header"><a href="/汇编/编译器.html#and和or的使用" class="sidebar-link">and和or的使用</a></li><li class="sidebar-sub-header"><a href="/汇编/编译器.html#数字要注意的问题" class="sidebar-link">数字要注意的问题</a></li><li class="sidebar-sub-header"><a href="/汇编/编译器.html#为什么要编译成obj" class="sidebar-link">为什么要编译成obj</a></li></ul></li><li><a href="/汇编/DOSBOX.html" class="sidebar-link">dosbox</a></li><li><a href="/汇编/OllyDbg.html" class="sidebar-link">OllyDbg</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="编译器"><a href="#编译器" class="header-anchor">#</a> 编译器</h1> <h2 id="编译器优化"><a href="#编译器优化" class="header-anchor">#</a> 编译器优化</h2> <ul><li><p>用 push ecx, pop ecx （指令都只有一个字节） 来替换 add/sub esp,04 (3个字节) 节约空间</p></li> <li><p>把常用的函数比如printf的地址 压入寄存器， mov esi,dword ptr ds:[&lt;&amp;MSVCR100.printf&gt;&gt; 提高速度</p></li> <li><p>尽量把变量放在寄存器，少用栈。</p></li> <li><p>函数return后，有时候栈不平衡，直接给变量使用。</p></li></ul> <div class="language-nasm line-numbers-mode"><pre class="language-nasm"><code>
+013C1000 <span class="token operator">&gt;</span><span class="token operator">/</span><span class="token operator">$</span>  <span class="token number">56</span>            push <span class="token register variable">esi</span>                                 <span class="token comment">;  msvcr100.printf</span>
+013C1001  <span class="token operator">|</span>.  8B35 A4203C01 mov <span class="token register variable">esi</span>,dword ptr <span class="token register variable">ds</span>:<span class="token operator">[</span><span class="token operator">&lt;</span><span class="token operator">&amp;</span>MSVCR100.printf<span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token comment">;  msvcr100.printf</span>
+013C1007  <span class="token operator">|</span>.  <span class="token number">57</span>            push <span class="token register variable">edi</span>
+013C1008  <span class="token operator">|</span>.  <span class="token number">68</span> F4203C01   push rasm.013C20F4                       <span class="token comment">; /format = &quot;youhua for</span>
+&quot;
+013C100D  <span class="token operator">|</span>.  FFD6          call <span class="token register variable">esi</span>                                 <span class="token comment">; \printf</span>
+013C100F  <span class="token operator">|</span>.  <span class="token number">59</span>            pop <span class="token register variable">ecx</span>                                  <span class="token comment">;  rasm.013C101A</span>
+013C1010  <span class="token operator">|</span>.  33FF          xor <span class="token register variable">edi</span>,<span class="token register variable">edi</span>
+013C1012  <span class="token operator">|</span><span class="token operator">&gt;</span>  <span class="token number">57</span>            <span class="token operator">/</span>push <span class="token register variable">edi</span>
+013C1013  <span class="token operator">|</span>.  <span class="token number">68</span> 00213C01   <span class="token operator">|</span>push rasm.013C2100                      <span class="token comment">;  ASCII &quot;%d\n&quot;</span>
+013C1018  <span class="token operator">|</span>.  FFD6          <span class="token operator">|</span>call <span class="token register variable">esi</span>                                <span class="token comment">;  msvcr100.printf</span>
+013C101A  <span class="token operator">|</span>.  <span class="token number">47</span>            <span class="token operator">|</span>inc <span class="token register variable">edi</span>
+013C101B  <span class="token operator">|</span>.  <span class="token number">59</span>            <span class="token operator">|</span>pop <span class="token register variable">ecx</span>                                 <span class="token comment">;  rasm.013C101A</span>
+013C101C  <span class="token operator">|</span>.  <span class="token number">59</span>            <span class="token operator">|</span>pop <span class="token register variable">ecx</span>                                 <span class="token comment">;  rasm.013C101A</span>
+013C101D  <span class="token operator">|</span>.  83FF 0A       <span class="token operator">|</span>cmp <span class="token register variable">edi</span>,<span class="token number">0xA</span>
+013C1020  <span class="token operator">|</span>.^ 7E F0         \jle short rasm.013C1012
+
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h2 id="cdel-stdcall-fastcall-约定"><a href="#cdel-stdcall-fastcall-约定" class="header-anchor">#</a> cdel stdcall fastcall 约定</h2> <ul><li><p>__cdel 参数从右到左入栈，由调用者进行栈平衡，add esp 8, c 与 c++ 默认都使用这个约定。 可变参数的函数必须用 cdel</p></li> <li><p>__stdcall 参数从右到左入栈，由被调用者返回的时候进行栈平衡 ret 8. 一般系统的api使用这个。</p></li> <li><p>__fastcall 前两个参数由寄存器传递，第3个参数用入栈的方式，也是由被调用者进行栈平衡 如果参数超过2个的时候。主要用与频繁调用的函数而且参数&lt;=2个的时候使用.</p></li></ul> <div class="language-nasm line-numbers-mode"><pre class="language-nasm"><code>
+
+<span class="token number">01281081</span>  <span class="token operator">|</span>.  6A <span class="token number">02</span>         push <span class="token number">0x2</span>
+<span class="token number">01281083</span>  <span class="token operator">|</span>.  6A <span class="token number">01</span>         push <span class="token number">0x1</span>
+<span class="token number">01281085</span>  <span class="token operator">|</span>.  E8 76FFFFFF   call rasm<span class="token number">.01281000</span>
+0128108A  <span class="token operator">|</span>.  83C4 <span class="token number">08</span>       add <span class="token register variable">esp</span>,<span class="token number">0x8</span>             <span class="token operator">/</span><span class="token operator">/</span> add1 函数返回后，__cdecl编译器会在调用函数里进行栈平衡
+<span class="token number">0128108D</span>  <span class="token operator">|</span>.  6A <span class="token number">04</span>         push <span class="token number">0x4</span>
+0128108F  <span class="token operator">|</span>.  6A <span class="token number">03</span>         push <span class="token number">0x3</span>
+<span class="token number">01281091</span>  <span class="token operator">|</span>.  E8 7AFFFFFF   call rasm<span class="token number">.01281010</span>      <span class="token operator">/</span><span class="token operator">/</span> add2 函数返回后__stdcall 不用进行栈平衡
+<span class="token number">01281096</span>  <span class="token operator">|</span>.  BA <span class="token number">06000000</span>   mov <span class="token register variable">edx</span>,<span class="token number">0x6</span>
+0128109B  <span class="token operator">|</span>.  B9 <span class="token number">05000000</span>   mov <span class="token register variable">ecx</span>,<span class="token number">0x5</span>
+012810A0  <span class="token operator">|</span>.  E8 7BFFFFFF   call rasm<span class="token number">.01281020</span>      <span class="token operator">/</span><span class="token operator">/</span> add3 函数返回 __fastcall 不用栈平衡，因为只有两个参数，通过寄存器传输
+012810A5  <span class="token operator">|</span>.  6A <span class="token number">0B</span>         push <span class="token number">0xB</span>
+012810A7  <span class="token operator">|</span>.  6A 0A         push <span class="token number">0xA</span>
+012810A9  <span class="token operator">|</span>.  6A <span class="token number">09</span>         push <span class="token number">0x9</span>
+012810AB  <span class="token operator">|</span>.  BA <span class="token number">08000000</span>   mov <span class="token register variable">edx</span>,<span class="token number">0x8</span>
+012810B0  <span class="token operator">|</span>.  B9 <span class="token number">07000000</span>   mov <span class="token register variable">ecx</span>,<span class="token number">0x7</span>
+012810B5  <span class="token operator">|</span>.  E8 86FFFFFF   call rasm<span class="token number">.01281040</span>      <span class="token operator">/</span><span class="token operator">/</span>add4 函数返回 __fastcall不用栈平衡，被调用函数进行的栈平衡是<span class="token number">0x0c</span>个，因为前面<span class="token number">2</span>个是通过寄存器
+
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><div class="language-nasm line-numbers-mode"><pre class="language-nasm"><code>
+<span class="token operator">/</span><span class="token operator">/</span> add1 __cdecl 函数直接返回不做栈平衡
+
+<span class="token number">01281000</span>  <span class="token operator">/</span><span class="token operator">$</span>  <span class="token number">55</span>            push <span class="token register variable">ebp</span>
+<span class="token number">01281001</span>  <span class="token operator">|</span>.  8BEC          mov <span class="token register variable">ebp</span>,<span class="token register variable">esp</span>
+<span class="token number">01281003</span>  <span class="token operator">|</span>.  8B45 <span class="token number">08</span>       mov <span class="token register variable">eax</span>,<span class="token operator">[</span>arg<span class="token number">.1</span><span class="token operator">]</span>
+<span class="token number">01281006</span>  <span class="token operator">|</span>.  <span class="token number">0345</span> 0C       add <span class="token register variable">eax</span>,<span class="token operator">[</span>arg<span class="token number">.2</span><span class="token operator">]</span>
+<span class="token number">01281009</span>  <span class="token operator">|</span>.  <span class="token number">5D</span>            pop <span class="token register variable">ebp</span>                                 
+0128100A  \.  C3            retn                                    <span class="token comment">;直接返回,由被调用这进行栈平衡</span>
+
+
+<span class="token operator">/</span><span class="token operator">/</span> add2 __stdcall 由函数返回时候做栈平衡
+
+
+<span class="token number">01281010</span>  <span class="token operator">/</span><span class="token operator">$</span>  <span class="token number">55</span>            push <span class="token register variable">ebp</span>
+<span class="token number">01281011</span>  <span class="token operator">|</span>.  8BEC          mov <span class="token register variable">ebp</span>,<span class="token register variable">esp</span>
+<span class="token number">01281013</span>  <span class="token operator">|</span>.  8B45 <span class="token number">08</span>       mov <span class="token register variable">eax</span>,<span class="token operator">[</span>arg<span class="token number">.1</span><span class="token operator">]</span>
+<span class="token number">01281016</span>  <span class="token operator">|</span>.  <span class="token number">0345</span> 0C       add <span class="token register variable">eax</span>,<span class="token operator">[</span>arg<span class="token number">.2</span><span class="token operator">]</span>
+<span class="token number">01281019</span>  <span class="token operator">|</span>.  <span class="token number">5D</span>            pop <span class="token register variable">ebp</span>                                  
+0128101A  \.  C2 <span class="token number">0800</span>       retn <span class="token number">0x8</span>                                 <span class="token comment">;返回时候栈平衡 </span>
+
+
+<span class="token operator">/</span><span class="token operator">/</span>add3 __fastcall 正好两个参数都由寄存器传送，返回时候不需要栈平衡
+
+<span class="token number">01281020</span>  <span class="token operator">/</span><span class="token operator">$</span>  <span class="token number">55</span>            push <span class="token register variable">ebp</span>
+<span class="token number">01281021</span>  <span class="token operator">|</span>.  8BEC          mov <span class="token register variable">ebp</span>,<span class="token register variable">esp</span>
+<span class="token number">01281023</span>  <span class="token operator">|</span>.  83EC <span class="token number">08</span>       sub <span class="token register variable">esp</span>,<span class="token number">0x8</span>
+<span class="token number">01281026</span>  <span class="token operator">|</span>.  <span class="token number">8955</span> F8       mov <span class="token operator">[</span>local<span class="token number">.2</span><span class="token operator">]</span>,<span class="token register variable">edx</span>
+<span class="token number">01281029</span>  <span class="token operator">|</span>.  <span class="token number">894D</span> FC       mov <span class="token operator">[</span>local<span class="token number">.1</span><span class="token operator">]</span>,<span class="token register variable">ecx</span>                        
+0128102C  <span class="token operator">|</span>.  8B45 FC       mov <span class="token register variable">eax</span>,<span class="token operator">[</span>local<span class="token number">.1</span><span class="token operator">]</span>                        
+0128102F  <span class="token operator">|</span>.  <span class="token number">0345</span> F8       add <span class="token register variable">eax</span>,<span class="token operator">[</span>local<span class="token number">.2</span><span class="token operator">]</span>                        
+<span class="token number">01281032</span>  <span class="token operator">|</span>.  8BE5          mov <span class="token register variable">esp</span>,<span class="token register variable">ebp</span>
+<span class="token number">01281034</span>  <span class="token operator">|</span>.  <span class="token number">5D</span>            pop <span class="token register variable">ebp</span>                                  
+<span class="token number">01281035</span>  \.  C3            retn                                      <span class="token comment">;不需要栈平衡，正好2个参数 </span>
+
+
+
+<span class="token operator">/</span><span class="token operator">/</span>add4 __fastcall 后三个参数要栈平衡
+
+<span class="token number">01281040</span>  <span class="token operator">/</span><span class="token operator">$</span>  <span class="token number">55</span>            push <span class="token register variable">ebp</span>
+<span class="token number">01281041</span>  <span class="token operator">|</span>.  8BEC          mov <span class="token register variable">ebp</span>,<span class="token register variable">esp</span>
+<span class="token number">01281043</span>  <span class="token operator">|</span>.  83EC <span class="token number">08</span>       sub <span class="token register variable">esp</span>,<span class="token number">0x8</span>
+<span class="token number">01281046</span>  <span class="token operator">|</span>.  <span class="token number">8955</span> F8       mov <span class="token operator">[</span>local<span class="token number">.2</span><span class="token operator">]</span>,<span class="token register variable">edx</span>
+<span class="token number">01281049</span>  <span class="token operator">|</span>.  <span class="token number">894D</span> FC       mov <span class="token operator">[</span>local<span class="token number">.1</span><span class="token operator">]</span>,<span class="token register variable">ecx</span>                        
+0128104C  <span class="token operator">|</span>.  8B45 FC       mov <span class="token register variable">eax</span>,<span class="token operator">[</span>local<span class="token number">.1</span><span class="token operator">]</span>                        
+0128104F  <span class="token operator">|</span>.  <span class="token number">0345</span> F8       add <span class="token register variable">eax</span>,<span class="token operator">[</span>local<span class="token number">.2</span><span class="token operator">]</span>                        
+<span class="token number">01281052</span>  <span class="token operator">|</span>.  <span class="token number">0345</span> <span class="token number">08</span>       add <span class="token register variable">eax</span>,<span class="token operator">[</span>arg<span class="token number">.1</span><span class="token operator">]</span>
+<span class="token number">01281055</span>  <span class="token operator">|</span>.  <span class="token number">0345</span> 0C       add <span class="token register variable">eax</span>,<span class="token operator">[</span>arg<span class="token number">.2</span><span class="token operator">]</span>
+<span class="token number">01281058</span>  <span class="token operator">|</span>.  <span class="token number">0345</span> <span class="token number">10</span>       add <span class="token register variable">eax</span>,<span class="token operator">[</span>arg<span class="token number">.3</span><span class="token operator">]</span>
+0128105B  <span class="token operator">|</span>.  8BE5          mov <span class="token register variable">esp</span>,<span class="token register variable">ebp</span>
+<span class="token number">0128105D</span>  <span class="token operator">|</span>.  <span class="token number">5D</span>            pop <span class="token register variable">ebp</span>                                  
+0128105E  \.  C2 0C00       retn <span class="token number">0xC</span>                                   <span class="token comment">;后三个参数要进行栈平衡</span>
+
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br></div></div><h2 id="vc使用的寄存器约定"><a href="#vc使用的寄存器约定" class="header-anchor">#</a> vc使用的寄存器约定</h2> <p>eax 函数的返回存放在eax</p> <h2 id="vc会对数组多申请一些字节"><a href="#vc会对数组多申请一些字节" class="header-anchor">#</a> vc会对数组多申请一些字节</h2> <p>又好像是为了对齐4个字节？？？？？？</p> <div class="language-c line-numbers-mode"><pre class="language-c"><code><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;cstdio&gt;</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;Windows.h&gt;</span></span>
+
+<span class="token keyword">void</span> <span class="token function">fun1</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	<span class="token keyword">char</span> cs<span class="token punctuation">[</span><span class="token number">17</span><span class="token punctuation">]</span><span class="token punctuation">;</span>   <span class="token comment">//17个字节，实际上</span>
+	<span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">0x01</span><span class="token punctuation">;</span>  <span class="token comment">// 1个字节</span>
+	<span class="token keyword">int</span> b <span class="token operator">=</span> <span class="token number">0x02</span><span class="token punctuation">;</span>  <span class="token comment">//4个字节</span>
+	<span class="token keyword">char</span> c <span class="token operator">=</span> <span class="token number">0x3</span><span class="token punctuation">;</span>  <span class="token comment">//4个字节  bp-</span>
+	
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot; allocate memory \n&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+	<span class="token function">fun1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;end\n&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">getchar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><div class="language-nasm line-numbers-mode"><pre class="language-nasm"><code>
+00C91000 <span class="token operator">&gt;</span><span class="token operator">/</span><span class="token operator">$</span>  <span class="token number">55</span>            push <span class="token register variable">ebp</span>
+00C91001  <span class="token operator">|</span>.  8BEC          mov <span class="token register variable">ebp</span>,<span class="token register variable">esp</span>
+00C91003  <span class="token operator">|</span>.  83EC <span class="token number">24</span>       sub <span class="token register variable">esp</span>,<span class="token number">0x24</span>
+00C91006  <span class="token operator">|</span>.  C745 FC <span class="token number">01000</span><span class="token operator">&gt;</span>mov <span class="token operator">[</span><span class="token register variable">ebp</span><span class="token operator">-</span><span class="token number">0x4</span><span class="token operator">]</span>,<span class="token number">0x1</span> <span class="token operator">/</span><span class="token operator">/</span>变量a
+00C9100D  <span class="token operator">|</span>.  C745 E0 <span class="token number">02000</span><span class="token operator">&gt;</span>mov <span class="token operator">[</span><span class="token register variable">ebp</span><span class="token operator">-</span><span class="token number">0x20</span><span class="token operator">]</span>,<span class="token number">0x2</span> <span class="token operator">/</span><span class="token operator">/</span>变量b  
+00C91014  <span class="token operator">|</span>.  C645 DF <span class="token number">03</span>    mov byte ptr <span class="token register variable">ss</span>:<span class="token operator">[</span><span class="token register variable">ebp</span><span class="token operator">-</span><span class="token number">0x21</span><span class="token operator">]</span>,<span class="token number">0x3</span>  <span class="token operator">/</span><span class="token operator">/</span>变量c
+00C91018  <span class="token operator">|</span>.  8BE5          mov <span class="token register variable">esp</span>,<span class="token register variable">ebp</span>
+00C9101A  <span class="token operator">|</span>.  <span class="token number">5D</span>            pop <span class="token register variable">ebp</span>
+00C9101B  \.  C3            retn
+
+
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h2 id="and和or的使用"><a href="#and和or的使用" class="header-anchor">#</a> and和or的使用</h2> <ul><li><p>and的用法</p> <ul><li>当要给某个位设置成0 的时候 就给那个位用0和</li></ul></li> <li><p>or的用法</p> <ul><li>当要给某个位设置成1的时候就给那个位 用1 or</li></ul></li></ul> <h2 id="数字要注意的问题"><a href="#数字要注意的问题" class="header-anchor">#</a> 数字要注意的问题</h2> <ul><li><p>当数字首个是字母的时候要加上0。 如 mov 0b800H 可以，不加0就编译不过</p></li> <li><p>数字是十进制就不用加h，十六进制就要加h</p></li></ul> <h2 id="为什么要编译成obj"><a href="#为什么要编译成obj" class="header-anchor">#</a> 为什么要编译成obj</h2> <p>把一个大的源代码分成多个源文件，这样修改一些内容的时候，不用全部从头编译，只编译修改的文件为新的obj文件然后link。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/汇编/寄存器.html" class="prev">
+        寄存器
+      </a></span> <span class="next"><a href="/汇编/DOSBOX.html">
+        dosbox
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.9eeb4c04.js" defer></script><script src="/assets/js/2.05f5c699.js" defer></script><script src="/assets/js/80.5c82a395.js" defer></script>
+  </body>
+</html>

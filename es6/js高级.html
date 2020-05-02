@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>js高级 | 读书笔记</title>
+    <meta name="description" content="blog for important">
+    <meta name="generator" content="VuePress 1.3.1">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.6b1fcd0f.css" as="style"><link rel="preload" href="/assets/js/app.9eeb4c04.js" as="script"><link rel="preload" href="/assets/js/2.05f5c699.js" as="script"><link rel="preload" href="/assets/js/32.79554d08.js" as="script"><link rel="prefetch" href="/assets/js/10.ce5629fc.js"><link rel="prefetch" href="/assets/js/11.9773dffd.js"><link rel="prefetch" href="/assets/js/12.cb235449.js"><link rel="prefetch" href="/assets/js/13.838af8c1.js"><link rel="prefetch" href="/assets/js/14.0f78d55e.js"><link rel="prefetch" href="/assets/js/15.7b28f3cf.js"><link rel="prefetch" href="/assets/js/16.bd9e6d20.js"><link rel="prefetch" href="/assets/js/17.d8687edf.js"><link rel="prefetch" href="/assets/js/18.306806ea.js"><link rel="prefetch" href="/assets/js/19.ab35d666.js"><link rel="prefetch" href="/assets/js/20.d0795bc0.js"><link rel="prefetch" href="/assets/js/21.4528c5b9.js"><link rel="prefetch" href="/assets/js/22.d2153363.js"><link rel="prefetch" href="/assets/js/23.d7c71f27.js"><link rel="prefetch" href="/assets/js/24.a9e1c254.js"><link rel="prefetch" href="/assets/js/25.15696c77.js"><link rel="prefetch" href="/assets/js/26.4bbfc20d.js"><link rel="prefetch" href="/assets/js/27.1a8b8d41.js"><link rel="prefetch" href="/assets/js/28.81f62634.js"><link rel="prefetch" href="/assets/js/29.15767945.js"><link rel="prefetch" href="/assets/js/3.512ca8e1.js"><link rel="prefetch" href="/assets/js/30.e956e5bf.js"><link rel="prefetch" href="/assets/js/31.c9fa876d.js"><link rel="prefetch" href="/assets/js/33.a6cfbf61.js"><link rel="prefetch" href="/assets/js/34.b6f8901e.js"><link rel="prefetch" href="/assets/js/35.ab673e8f.js"><link rel="prefetch" href="/assets/js/36.f5ee7dc3.js"><link rel="prefetch" href="/assets/js/37.40e0320b.js"><link rel="prefetch" href="/assets/js/38.6cb6a27b.js"><link rel="prefetch" href="/assets/js/39.ff4a30ed.js"><link rel="prefetch" href="/assets/js/4.00b5f0c7.js"><link rel="prefetch" href="/assets/js/40.478ea2a9.js"><link rel="prefetch" href="/assets/js/41.64fdc8de.js"><link rel="prefetch" href="/assets/js/42.514e254b.js"><link rel="prefetch" href="/assets/js/43.e2c263a3.js"><link rel="prefetch" href="/assets/js/44.e01d7fb4.js"><link rel="prefetch" href="/assets/js/45.a2fddd2d.js"><link rel="prefetch" href="/assets/js/46.8282db21.js"><link rel="prefetch" href="/assets/js/47.a7e1170f.js"><link rel="prefetch" href="/assets/js/48.fe61ca73.js"><link rel="prefetch" href="/assets/js/49.34cbcda0.js"><link rel="prefetch" href="/assets/js/5.59abda55.js"><link rel="prefetch" href="/assets/js/50.38e400ea.js"><link rel="prefetch" href="/assets/js/51.03cc45e4.js"><link rel="prefetch" href="/assets/js/52.f133d9c7.js"><link rel="prefetch" href="/assets/js/53.ada00766.js"><link rel="prefetch" href="/assets/js/54.24a05a9c.js"><link rel="prefetch" href="/assets/js/55.204b6e5c.js"><link rel="prefetch" href="/assets/js/56.13a2207f.js"><link rel="prefetch" href="/assets/js/57.a252ceca.js"><link rel="prefetch" href="/assets/js/58.315067a8.js"><link rel="prefetch" href="/assets/js/59.0026ba95.js"><link rel="prefetch" href="/assets/js/6.fccdfb42.js"><link rel="prefetch" href="/assets/js/60.30c08c7c.js"><link rel="prefetch" href="/assets/js/61.87d9ca75.js"><link rel="prefetch" href="/assets/js/62.30b4fffc.js"><link rel="prefetch" href="/assets/js/63.44cd0bb8.js"><link rel="prefetch" href="/assets/js/64.29caf405.js"><link rel="prefetch" href="/assets/js/65.5280d5cd.js"><link rel="prefetch" href="/assets/js/66.c1aa3043.js"><link rel="prefetch" href="/assets/js/67.7baea68b.js"><link rel="prefetch" href="/assets/js/68.d202f339.js"><link rel="prefetch" href="/assets/js/69.9b34bf67.js"><link rel="prefetch" href="/assets/js/7.1753504c.js"><link rel="prefetch" href="/assets/js/70.0569eace.js"><link rel="prefetch" href="/assets/js/71.464aeeb3.js"><link rel="prefetch" href="/assets/js/72.b7ec61d5.js"><link rel="prefetch" href="/assets/js/73.afd82e65.js"><link rel="prefetch" href="/assets/js/74.6bf26649.js"><link rel="prefetch" href="/assets/js/75.97d4b5c5.js"><link rel="prefetch" href="/assets/js/76.ae4be9dc.js"><link rel="prefetch" href="/assets/js/77.0236f6e7.js"><link rel="prefetch" href="/assets/js/78.de45f505.js"><link rel="prefetch" href="/assets/js/79.74474488.js"><link rel="prefetch" href="/assets/js/8.7d851339.js"><link rel="prefetch" href="/assets/js/80.5c82a395.js"><link rel="prefetch" href="/assets/js/81.310b0fe4.js"><link rel="prefetch" href="/assets/js/82.11228b74.js"><link rel="prefetch" href="/assets/js/83.2c92d02f.js"><link rel="prefetch" href="/assets/js/84.b1209e24.js"><link rel="prefetch" href="/assets/js/9.e24e4f73.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6b1fcd0f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">读书笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/uni-app/" class="nav-link">
+  uni
+</a></div><div class="nav-item"><a href="/es6/" class="nav-link router-link-active">
+  es6
+</a></div><div class="nav-item"><a href="/python/" class="nav-link">
+  py
+</a></div><div class="nav-item"><a href="/tp5/" class="nav-link">
+  tp5
+</a></div><div class="nav-item"><a href="/docker/" class="nav-link">
+  dock
+</a></div><div class="nav-item"><a href="/face/" class="nav-link">
+  face
+</a></div><div class="nav-item"><a href="/android/" class="nav-link">
+  android
+</a></div><div class="nav-item"><a href="/csharp/" class="nav-link">
+  csharp
+</a></div><div class="nav-item"><a href="/c++/" class="nav-link">
+  c++
+</a></div><div class="nav-item"><a href="/arm/" class="nav-link">
+  arm
+</a></div><div class="nav-item"><a href="/wechat/" class="nav-link">
+  wechat
+</a></div><div class="nav-item"><a href="/汇编/" class="nav-link">
+  汇编
+</a></div><div class="nav-item"><a href="/unix/" class="nav-link">
+  unix
+</a></div><div class="nav-item"><a href="/资源/" class="nav-link">
+  资源
+</a></div><div class="nav-item"><a href="/摄影/" class="nav-link">
+  摄影
+</a></div><div class="nav-item"><a href="/加密币/" class="nav-link">
+  加密币
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/uni-app/" class="nav-link">
+  uni
+</a></div><div class="nav-item"><a href="/es6/" class="nav-link router-link-active">
+  es6
+</a></div><div class="nav-item"><a href="/python/" class="nav-link">
+  py
+</a></div><div class="nav-item"><a href="/tp5/" class="nav-link">
+  tp5
+</a></div><div class="nav-item"><a href="/docker/" class="nav-link">
+  dock
+</a></div><div class="nav-item"><a href="/face/" class="nav-link">
+  face
+</a></div><div class="nav-item"><a href="/android/" class="nav-link">
+  android
+</a></div><div class="nav-item"><a href="/csharp/" class="nav-link">
+  csharp
+</a></div><div class="nav-item"><a href="/c++/" class="nav-link">
+  c++
+</a></div><div class="nav-item"><a href="/arm/" class="nav-link">
+  arm
+</a></div><div class="nav-item"><a href="/wechat/" class="nav-link">
+  wechat
+</a></div><div class="nav-item"><a href="/汇编/" class="nav-link">
+  汇编
+</a></div><div class="nav-item"><a href="/unix/" class="nav-link">
+  unix
+</a></div><div class="nav-item"><a href="/资源/" class="nav-link">
+  资源
+</a></div><div class="nav-item"><a href="/摄影/" class="nav-link">
+  摄影
+</a></div><div class="nav-item"><a href="/加密币/" class="nav-link">
+  加密币
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/es6/" class="sidebar-link">es6</a></li><li><a href="/es6/js高级.html" class="active sidebar-link">js高级</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/es6/js高级.html#数据类型" class="sidebar-link">数据类型</a></li><li class="sidebar-sub-header"><a href="/es6/js高级.html#typeof-instanceof" class="sidebar-link">typeof instanceof ===/==</a></li><li class="sidebar-sub-header"><a href="/es6/js高级.html#判断需要注意的问题" class="sidebar-link">判断需要注意的问题</a></li><li class="sidebar-sub-header"><a href="/es6/js高级.html#null和undefined" class="sidebar-link">null和undefined</a></li><li class="sidebar-sub-header"><a href="/es6/js高级.html#变量的类型" class="sidebar-link">变量的类型</a></li><li class="sidebar-sub-header"><a href="/es6/js高级.html#内存和函数参数传值" class="sidebar-link">内存和函数参数传值</a></li><li class="sidebar-sub-header"><a href="/es6/js高级.html#类的属性访问用" class="sidebar-link">类的属性访问用[]</a></li><li class="sidebar-sub-header"><a href="/es6/js高级.html#函数可以指定调用者" class="sidebar-link">函数可以指定调用者</a></li><li class="sidebar-sub-header"><a href="/es6/js高级.html#函数的iife立即执行函数" class="sidebar-link">函数的iife立即执行函数</a></li><li class="sidebar-sub-header"><a href="/es6/js高级.html#prototype和-proto" class="sidebar-link">prototype和_proto_</a></li><li class="sidebar-sub-header"><a href="/es6/js高级.html#变量和函数提升" class="sidebar-link">变量和函数提升</a></li><li class="sidebar-sub-header"><a href="/es6/js高级.html#闭包" class="sidebar-link">闭包</a></li><li class="sidebar-sub-header"><a href="/es6/js高级.html#闭包的this用法" class="sidebar-link">闭包的this用法</a></li></ul></li><li><a href="/es6/rxjs.html" class="sidebar-link">rxjs</a></li><li><a href="/es6/chrome.html" class="sidebar-link">chrome</a></li><li><a href="/es6/nodejs.html" class="sidebar-link">nodejs</a></li><li><a href="/es6/socketio.html" class="sidebar-link">socketio</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="js高级"><a href="#js高级" class="header-anchor">#</a> js高级</h1> <h2 id="数据类型"><a href="#数据类型" class="header-anchor">#</a> 数据类型</h2> <ul><li><p>值类型</p> <ul><li>number</li> <li>string</li> <li>boolean</li> <li>undefined 是一个数值，typeof undefined = 'undefined' 没有其他类型的typeof = ‘undefined’所以可以用typeof来判断一个类似是否是为定义</li> <li>null 是一个数值，注意 typeof null = 'object',因为不等于'null'而是等于'object'所以没有办法跟其他也是typeof为'object'的类型区分,只能用 === 来判断</li></ul></li> <li><p>引用类型</p> <ul><li>object 对象只能用来存放数据，而且无序</li> <li>array 也是对象的一种，数组存放数据，但是有序，可以用下标索引。typeof array = 'object'</li> <li>function 也是对象的一种，可以执行 typeof fuction = 'function'</li></ul></li></ul> <h2 id="typeof-instanceof"><a href="#typeof-instanceof" class="header-anchor">#</a> typeof instanceof ===/==</h2> <ul><li><p>===判断的时候不对类型进行转换， ==会对类型进行转换</p></li> <li><p>typeof 返回的是一个类型的字符串描述</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">var</span> a <span class="token comment">//a的类型为 undefined 字符串描述是 'undefined'</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>
+    <span class="token keyword">typeof</span> a<span class="token punctuation">,</span> <span class="token comment">// 'undefined'</span>
+    <span class="token keyword">typeof</span> a <span class="token operator">===</span> <span class="token string">'undefined'</span><span class="token punctuation">,</span> <span class="token comment">//true 这里是跟字符串‘undefined’做比较</span>
+    a <span class="token operator">===</span> <span class="token keyword">undefined</span> <span class="token punctuation">,</span> <span class="token comment">// true  这里是跟undefined类型做比较</span>
+    <span class="token comment">//不可以用instanceof因为instanceof是给对象进行类型判断</span>
+<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div></li> <li><p>instanceof是对引用类型进行判断</p> <ul><li>array 既是 array 也是 object</li> <li>function 既是 function 也是 object</li></ul></li></ul> <h2 id="判断需要注意的问题"><a href="#判断需要注意的问题" class="header-anchor">#</a> 判断需要注意的问题</h2> <ul><li><p>typeof</p> <ul><li>可以判断  function('function')，undefined('undefined')，string ,number ,boolean</li> <li>不可以判断 null('object'), array('object'), object('object')
+<ul><li>不可以判断所有typeof是object的类型，按道理所有的object，array，function都不可以，但是function特殊，返回的是'funciton',所以可以.其他的object和array都不可以因为返回的都是'object'</li> <li>null本来是数值，但是typeof又是‘object’，所以也不可以。</li> <li>所以只要是返回 'object'的都不可以，因为没有唯一性。</li></ul></li></ul></li> <li><p>instanceof</p> <ul><li>判断object类型的数据
+<ul><li>object</li> <li>array</li> <li>function</li></ul></li></ul></li> <li><p>===</p> <ul><li>用来判断 undefined，null</li></ul></li></ul> <h2 id="null和undefined"><a href="#null和undefined" class="header-anchor">#</a> null和undefined</h2> <ul><li><p>undefined 是定义了未赋值， null是定义了并赋值为null</p></li> <li><p>null本来是值类型，但是typeof是object，是因为我们定义一个变量并且准备赋值为对象的时候要给个初始值这样比较严谨，这时候只能赋值给null，这样我们就指定这个变量接下来要赋值给一个对象，所以null的typeof才会变成object。</p></li> <li><p>null在变量定义和变量回收的时候都使用，当变量所指向的对象不使用了，把变量赋值为null，浏览器就会进行回收这个对象，因为这个对象的引用没有了。</p></li></ul> <h2 id="变量的类型"><a href="#变量的类型" class="header-anchor">#</a> 变量的类型</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">//a存的是function的地址，所以变量a是一个引用变量</span>
+<span class="token keyword">var</span> <span class="token function-variable function">a</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span>
+<span class="token comment">//这时候应该是去访问a的值(是一个地址)根据这个值去找到这个地址</span>
+<span class="token comment">//根据这个地址的信息标明是array，function，object来判断类型</span>
+<span class="token keyword">typeof</span> a
+
+<span class="token comment">// b是一个值变量，因为b存的值即是变量的值</span>
+<span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token number">2</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h2 id="内存和函数参数传值"><a href="#内存和函数参数传值" class="header-anchor">#</a> 内存和函数参数传值</h2> <ul><li>变量的内存</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">//这里有三个内存 a, b ,还有一个对象，对象存在堆中，地址存在b</span>
+<span class="token comment">//a, b 都是内存地址的别名</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span> 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li>函数的调用是传值的</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">//a的值是 对象 {'name' : 'john', 'age': 18} 在堆中的地址</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'name'</span> <span class="token operator">:</span> <span class="token string">'john'</span><span class="token punctuation">,</span> <span class="token string">'age'</span><span class="token operator">:</span> <span class="token number">18</span><span class="token punctuation">}</span>
+
+<span class="token comment">//a是形参，在被调用的时候 fn内部有个局部变量a，fn的局部变量a在被调用的时候</span>
+<span class="token comment">//被赋值为传进来的参数的值， 这里的a是局部变量，当函数结束的时候，就会被回收</span>
+<span class="token comment">//如果在fn的局部变量在函数内，不指向其他地址，所有的操作会影响传进来的对象</span>
+<span class="token comment">//现在在里面声明了一个新的对象，并且fn的a指向了那个新的对象，</span>
+<span class="token comment">//在函数结束的时候那个新的对象就会被回收</span>
+<span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token parameter">a</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    a<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">'john1'</span>
+    a <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'name'</span> <span class="token operator">:</span> <span class="token string">'john2'</span><span class="token punctuation">,</span> <span class="token string">'age'</span><span class="token operator">:</span> <span class="token number">19</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//这里a以传值的方式，把自己的值传给了 fn的局部变量a</span>
+<span class="token function">fn</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h2 id="类的属性访问用"><a href="#类的属性访问用" class="header-anchor">#</a> 类的属性访问用[]</h2> <ul><li>当属性的名字有 - 的时候，访问就要用  a['pros-a']</li> <li>当属性的名字不确定的时候</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">var</span> prosname <span class="token operator">=</span> <span class="token string">'name'</span>
+<span class="token keyword">var</span> Person <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token comment">//这里prosname不带''号，是直接以变量的方式</span>
+Person<span class="token punctuation">[</span>prosname<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'john'</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="函数可以指定调用者"><a href="#函数可以指定调用者" class="header-anchor">#</a> 函数可以指定调用者</h2> <p>函数并不属于哪个对象在内存中</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">//定义了一个空对象</span>
+<span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token comment">//定义了一个全局函数</span>
+<span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>xxx <span class="token operator">=</span> <span class="token string">'john'</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>xxx<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//用obj来调用fn函数，可见所有的函数在内存里都是独立的，并不属于一个类，</span>
+<span class="token comment">//函数里的this指针根据是谁在调用它，this代表的就是调用者。</span>
+<span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h2 id="函数的iife立即执行函数"><a href="#函数的iife立即执行函数" class="header-anchor">#</a> 函数的iife立即执行函数</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">//全局变量a</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token string">'123'</span>
+
+<span class="token comment">//立即执行函数，里面的变量和函数都是局部的</span>
+<span class="token comment">//可以通过window来暴露出想要暴露的函数和变量</span>
+<span class="token punctuation">;</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span>
+    <span class="token keyword">function</span> <span class="token function">test</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    window<span class="token punctuation">.</span><span class="token function-variable function">$</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">{</span>
+            test<span class="token operator">:</span> test
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">//$ 是一个函数，$()执行后是一个对象，里面有一个test属性</span>
+<span class="token comment">//test属性的值是立即执行函数里的函数test，这样就把立即执行函数里的test函数暴露出来</span>
+<span class="token comment">//并且把立即执行函数里变量a通过这个test函数来显示出来</span>
+
+<span class="token function">$</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><h2 id="prototype和-proto"><a href="#prototype和-proto" class="header-anchor">#</a> prototype和__proto__</h2> <p><a href="https://drive.google.com/open?id=1cvPH0PUkAsHd45ZwbGo-lTfq6mwmKHd1" target="_blank" rel="noopener noreferrer">原型链主要作用是靠隐性链去查找<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><img src="http://drive.google.com/uc?export=view&amp;id=1cvPH0PUkAsHd45ZwbGo-lTfq6mwmKHd1" alt="alt text" title="Soot"></p> <p><a href="https://drive.google.com/open?id=1KGo6W-y5xRS0fOI7Tfd-UvpMJkuoj7QY" target="_blank" rel="noopener noreferrer">显示链prototype只存在构造函数里<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><img src="http://drive.google.com/uc?export=view&amp;id=1KGo6W-y5xRS0fOI7Tfd-UvpMJkuoj7QY" alt="alt text" title="Soot"></p> <p><a href="https://drive.google.com/open?id=1CWQxG2YJB6XieaQc9at0OeFMKxzJWQ9D" target="_blank" rel="noopener noreferrer">隐性链__proto__ 在实例和原型类里的作用，都是做为索引使用<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><img src="http://drive.google.com/uc?export=view&amp;id=1CWQxG2YJB6XieaQc9at0OeFMKxzJWQ9D" alt="alt text" title="Soot"></p> <p><a href="https://drive.google.com/open?id=1E_vfxueJFtC8r7N0P7tMXPxrSR6N96p-" target="_blank" rel="noopener noreferrer">隐性链__proto__在构造函数里的作用，是找到自己做为函数的属性<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><img src="http://drive.google.com/uc?export=view&amp;id=1E_vfxueJFtC8r7N0P7tMXPxrSR6N96p-" alt="alt text" title="Soot"></p> <h2 id="变量和函数提升"><a href="#变量和函数提升" class="header-anchor">#</a> 变量和函数提升</h2> <ul><li><p>变量和函数提升的原因，执行的时候分为两个步骤，一个是上下文的初始化，二才是开始执行</p> <ul><li><p>windows上下文初始化,一定要注意顺序</p> <ol><li><p>在windows上下文执行的时候先把所有的var变量先添到window的属性里，包括隐性的var声明，比如直接使用的 console.log(varible) 这里varible没有定义过，直接使用的都算。 这时候这个var的值为 ‘undefined’</p></li> <li><p>把所有的函数声明实例化一个对象，并添加到windows属性里，比如声明了func 那么windows就有一个属性  func: func()</p></li></ol></li> <li><p>然后开始执行</p> <ol><li><p>然后开始执行代码, 如果变量这时候还没有赋值，那么就输出为 'undefined' 这就是变量提升</p></li> <li><p>开始执行代码的时候所有的函数都已经可以调用，因为在windows里已经给这个函数添加了属性并且已经实例化了函数对象。</p></li></ol></li></ul></li> <li><p>函数定义如果以变量方式赋值，那么就会被当作变量，那么在定义语句前调用的话就是 ‘undefined’</p></li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token function">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">//这时候调用会小时 func不是一个函数，因为func是var定义的，默认添加到windows属性的时候是‘undefined’</span>
+
+<span class="token keyword">var</span> <span class="token function-variable function">func</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">fun1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'fun1'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li>注意上下文初始化和执行两个步骤并且严格安装顺序
+<ol><li><p>上下文初始化: c:'undefind' (在Windows中)</p></li> <li><p>上下文初始化  c: c() (在Windows中)</p></li> <li><p>开始执行 c = 1 //这里直接把c变为了 c:1 (在Windows中)</p></li> <li><p>跳过函数的声明,声明在执行阶段是不执行的，只有在上下文初始化阶段实例化函数对象的时候已经执行过。所以也断点不下来在执行的时候。</p></li> <li><p>这时候把c用函数调用的方式调用就会出粗，因为c已经是一个number</p></li></ol></li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">var</span> c <span class="token operator">=</span> <span class="token number">1</span>
+<span class="token keyword">function</span> <span class="token function">c</span><span class="token punctuation">(</span><span class="token parameter">c</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'c'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="闭包"><a href="#闭包" class="header-anchor">#</a> 闭包</h2> <ul><li>闭包的介绍</li></ul> <p><a href="https://drive.google.com/open?id=115IvaRZ0ewz1xvrP9l01msIqudB_EZaS" target="_blank" rel="noopener noreferrer">闭包是怎么形成的<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><img src="http://drive.google.com/uc?export=view&amp;id=115IvaRZ0ewz1xvrP9l01msIqudB_EZaS" alt="alt text" title="Soot"></p> <p><a href="https://drive.google.com/open?id=1PxTMFFPUR5pjQe5ZxJsvE-2jJ8-TAzsS" target="_blank" rel="noopener noreferrer">闭包的总结和闭包的使用<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><img src="http://drive.google.com/uc?export=view&amp;id=1PxTMFFPUR5pjQe5ZxJsvE-2jJ8-TAzsS" alt="alt text" title="Soot"></p> <ul><li>在使用好闭包后，记得把引用设置为null， 释放调闭包里的局部变量</li></ul> <h2 id="闭包的this用法"><a href="#闭包的this用法" class="header-anchor">#</a> 闭包的this用法</h2> <p><a href="https://drive.google.com/open?id=1eiyXApqXsmTQ8sOeksJBKcp8ldYuj72G" target="_blank" rel="noopener noreferrer">闭包的this用法<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><img src="http://drive.google.com/uc?export=view&amp;id=1eiyXApqXsmTQ8sOeksJBKcp8ldYuj72G" alt="alt text" title="Soot"></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/es6/" class="prev router-link-active">
+        es6
+      </a></span> <span class="next"><a href="/es6/rxjs.html">
+        rxjs
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.9eeb4c04.js" defer></script><script src="/assets/js/2.05f5c699.js" defer></script><script src="/assets/js/32.79554d08.js" defer></script>
+  </body>
+</html>
